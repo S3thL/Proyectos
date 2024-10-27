@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link  rel="stylesheet" href="/CSS/stylesPor.css"/> 
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"style="float:left">&lsqb;Inicio &vellip; </a></li>
+                <li><a href="portafolio.html"style="float:left">Portafolio &vellip;</a></li>
+                <li><a href="contacto.html"style="float:left">Contacto &vellip; </a></li>
+                <li><a href="acercade.html"style="float:left">A cerca de&vellip;</a></li>
+                <li><a href="formulario.html" style="float:left">Formulario de practica&rsqb;</a></li>
+                <li><a href="formularioLogin.html" style="float: left;">Formulario de Login&rsqb;</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <h1> Formularios en html</h1> <br>
+    <!-- action es para mostrar una url especifica cuando se envia el formulario,
+      target es para saleccionar en que pestaña dle navegador se va a cargar ya sea en la misma o una adicional,
+       autocomplete es para que no sugiera valores-->
+        <section>  
+        <form method="post" action="Practicando" target="_self" autocomplete="off">
+            <!-- fieldset es para enmarcar facilmente un area, en este caso un formulario-->
+            <fieldset>
+                <legend style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong>Datos usuario.</strong></legend>
+                <!-- formularios para nombres de usuarios  --> 
+                <label for="NombreU"> Nombre: </label>
+                <input type="text" id="NombreU" name="NombreU" 
+                placeholder="Escribe tu nombre..." required="true"/>
+                <br> <br>
+                <!-- readonly es para datos que solo vera la base de datos y se asignaran sin que el usuario intervenga,
+                y disabled para que no este habilitado, aunque si esta desabilitado ya no se envia al servidor-->
+                <label for="IdU"> Id usuario: </label>
+                <input type="text" id="IdU" name="IdU" 
+                readonly="true" value="01" disabled="true"/>
+                <br> <br>
+                <!-- para usar valores ocultos se utiliza hidden-->
+                <input type="hidden" id="sistema" name="sistema" value="SBD(sistemaBaseDatos)"/>
+
+                <label for="ApellidoU"> Apellidos: </label>
+                <input type="text" id="ApellidoU" name="ApellidoU"
+                placeholder="Escribe tus apellidos..." required="true"/>
+                <br><br>
+                <label for="ContraseñaU"> Contraseña: </label>
+                <input type="password" id="ContraseñaU" name="ContraseñaU"
+                placeholder="Ingrese su contraseña..." required="true"/>
+                <br><br>
+                <label for="EmailU">Email: </label>
+                <input type="email" id="EmailU" name="EmailU"
+                placeholder="Ingrese su email..." required="false"/>
+                <br><br> 
+                <label for="EdadU">Edad: </label>
+                <input type="number" id="EdadU" name="EdadU"
+                placeholder="Ingrese su edad actual..." required="false"/>
+                <!--Para agregar numeros no enteros debe agregarse la etiqueta  step="any" en la parte de input-->
+                <br><br>
+                <label>Género: </label>
+                <br>
+                <input type="radio" id="femeninoU" name="generoU" value="femeninoU"/>
+                <label for="fememino"> Femenino </label>
+                <br>
+                <input type="radio" id="masculinoU" name="generoU" value="masculinoU"/>
+                <label for="masculinoU"> Masculino</label>
+                <br>
+                <input type="radio" id="otrogU" name="generoU" value="otrogU"/>
+                <label for="otrogU"> Otro</label>
+                <br><br>
+                <label>Canciones favoritas de lilchayan:</label>
+                <!-- Se deben colocar con el mismo nombre para que los datos entren como solo una entrada en la base de datos-->
+                <br>
+                <input type="checkbox" id="pqpich" name="lilchayan" value="pqpich"/>
+                <label for="pqpich">Pa que pichea</label>
+                <br>
+                <input type="checkbox" name="lilchayan" id="619" value="619"/>
+                <label for="619"> 619</label>
+                <br>
+                <input type="checkbox" name="lilchayan" id="spet" value="spet">
+                <label for="spet"> Siempre pienso en ti</label>
+                <br><br>
+                <label for="ciudadU">Ciudad residente:</label><br>
+                <select id="ciudadU" name="ciudadU">
+                    <!--A la base de datos se enviara el value, no el texto-->
+                    <option value="Otra" selected="true">---</option>
+                    <option value="angol">Angol</option>
+                    <option value="renaico">Renaico</option>
+                    <option value="collipulli">Collipulli</option>
+                    <option value="tijeral">Tijeral</option>
+                    <option value="coigue">Coigue</option>
+                    <option value="LosAngeles">Los angeles</option>
+                </select>
+                <br><br>
+                <label for="ComentarioU">Comentario extra:</label><br>
+                <textarea id="ComentarioU" name="ComentarioU" rows="4" cols="30"></textarea>
+                <br><br>
+                <input type="submit" value="Enviar"/>
+                <input type="reset" value="Limpiar datos"/>
+                <br>
+                <hr>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <hr>
+        <center> &#169 bmd.Ja</center>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+/*los textos y etiquetas alteradas desde css priorizan los estilos dentro de la etiqueta, luego un archivo externo como este*/
+h4{ padding: 5px solid green ;
+    margin-top: 30px;
+    margin-left: 15px;
+    background-color: FBFFFE;
+    color: #96031A;
+}
+
+a { padding: 5px 10px;
+    border: 10px;
+    background-color:#CECFC7 ;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FAA916;
+    }
+
+
+
+/*cambiar colores de links*/
+a:link ,  a:visited{
+        background-color: #003366;
+        color: #FAA916;
+}
+
+a:hover, a:active{
+    color: #6D676E;
+    background-color: #003366;
+}
+
+hr{
+    color: black;
+    padding: 1px;
+}
+
+h1{ 
+    color: #96031A;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* se supone que sirve para cambiar todos los estilos dentro de un div
+.links{
+    float:left;
+}
+*/
+
+/*sirve para que todos los elementos html que no tengan 
+un propio estilo tengan algo mientras, aunque en caso de que se defina alguno toma como prioridad el otro*/
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.HabPor{
+    background-color:#b0a9b1 ;
+    border: 5px solid black;
+    border-color:#6D676E ;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.article {
+    background-color:#b0a9b1 ;
+    border: 5px solid black;
+    border-color:#6D676E ;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*La # sirve para demarcar un identificador de una elemento html*/
+#imagenCena{
+    width:400 px; 
+    height: 400px;
+    padding: 0px solid;
+    display: inline-block;
+}
+
+.Pestañas{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid #003366;
+    padding-bottom: 30px;
+}
+
+#tituCSS{
+    color:blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif}
+
+#tituHTML{ 
+    color:orangered;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tituJS{
+    color: #effa16; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton{
+    text-align: center;
+    background-color: #003366;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid #FAA916;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+}
+.boton:hover{
+    background-color: #2c649c;
+    color: #CECFC7;
+}
+
+
+/*
+.Marcadores{
+
+}
+*/
+
+.footer{
+    clear: both;
+    padding: 1px;
+    text-align: center;
+}

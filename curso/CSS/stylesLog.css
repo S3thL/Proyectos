@@ -1,0 +1,46 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(#003366,#4f6b86);
+}
+.contenedor{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #FAA916 ;
+}
+.contenedor .elemento label{
+    color: #a78a56;
+}
+.contenedor .elemento input{
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom:1px solid #FAA916;
+    margin-bottom: 30px;
+}
+
+.contenedor .elemento input[type="submit"]{
+    background-color:#96031A ;
+    border: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+*{font-family: Verdana, Geneva, Tahoma, sans-serif;}

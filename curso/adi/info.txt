@@ -1,0 +1,10 @@
+
+<!-- La estiqueta <section> ayuda a demarcar zonas o secciones de una pagina web
+    <article> para elementos independientes
+    <aside> para agregar un elemento a un lado del texto
+    <header> cabecero / <footer> pie de pagina
+    <hgroup> agrupar titulos ya sea h1 p h6 
+    <nav> se agregara barra de navegacion> -->
+    
+
+Ultimo que hacer, borrar div de elementos y seccionar con <section>, article es para cosas pequeñas
